@@ -24,18 +24,19 @@
   <div ng-app="" ng-controller="ContactController" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
   <h1 class="greet">Welcome to Sanchit's Portfolio.<br>Please enter your name to continue.</h1><br><br>
   	<form ng-submit="addMail()">
-    	<input type="mail" placeholder = "Name" ng-model="mailAdress"/>
-    	<button type="submit">Submit</button>
+    	<input type="mail" style="width: 75%;height: 45px; border: 2px solid black; border-radius: 10px; padding: 15px;
+    	font-size: 15px;" placeholder = "Name" ng-model="mailAdress"/>
+    	<button type="submit" style="padding: 12px; margin: 2%; background-color: white; font-size: 120%; border-radius: 10px; border: 2px solid black; cursor: pointer;">Submit</button>
   	</form>
   	<br><br>
 	<li style="list-style-type: none;" ng-repeat="contact in contacts track by $index">  
     <p style="font-size: 160%;">Welcome to the Website {{ contact }}! <br><br> 
-    <a><button>Click Here To Continue!</button></a></p> 
+    <center><a href="#info"><button style="padding: 8px; font-size: 14px;border-radius: 5px;border: 1.5px solid #1db4d4;cursor: pointer;background-color: white;">Click Here To Continue!</button></a></center></p> 
   </li>
   	</div>
   </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div class="info">
+<div id="info">
 <section id="cd-timeline" class="cd-container">
 		<div class="cd-timeline-block">
 			<div class="cd-timeline-img cd-picture">
