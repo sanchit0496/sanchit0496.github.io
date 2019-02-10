@@ -1,3 +1,23 @@
+jQuery(document).ready(function($){
+	var $timeline_block = $('.cd-timeline-block');
+
+	//hide timeline blocks which are outside the viewport
+	$timeline_block.each(function(){
+		if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+			$(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+		}
+	});
+
+	//on scolling, show/animate timeline blocks when enter the viewport
+	$(window).on('scroll', function(){
+		$timeline_block.each(function(){
+			if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+				$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+			}
+		});
+	});
+});
+
 particlesJS("particles-js", {"particles":{"number":{"value":70,"density":{"enable":true,"value_area":481.0236182596568}},
 	"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},
 	"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5371430403899501,"random":false,
