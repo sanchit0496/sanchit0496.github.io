@@ -24,16 +24,18 @@
     	<button type="submit">Submit</button>
   	</form>
   	<br><br>
-  	<ul style="list-style-type: none;">
-	<li style="list-style-type: none;" ng-repeat="contact in contacts track by $index">  <h2>Welcome to the Website</h2> {{ contact }} ! </li>
-  	</ul>
+	<li style="list-style-type: none;" ng-repeat="contact in contacts track by $index">  
+    <p>Welcome to the Website {{ contact }}! <br> <button>Click Here To Continue!</button></p> 
+  </li>
   	</div>
   </div>
 
 
+
+
+
   	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
  	<!-- stats.js lib --> 
-  	<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.5/angular.min.js'></script>
 	<script  src="js/index.js"></script>
