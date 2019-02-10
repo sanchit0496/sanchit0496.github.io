@@ -1,4 +1,18 @@
 jQuery(document).ready(function($){
+
+function ContactController($scope) {
+   $scope.contacts = [];
+  
+  $scope.addMail = function() {
+    if(this.mailAdress) {
+      $scope.contacts.push($scope.mailAdress);
+      $scope.mailAdress = "";
+    }
+  };
+}
+
+
+
 	var $timeline_block = $('.cd-timeline-block');
 
 	//hide timeline blocks which are outside the viewport
@@ -18,19 +32,8 @@ jQuery(document).ready(function($){
 	});
 
 
-function ContactController($scope) {
-   $scope.contacts = [];
-  
-  $scope.addMail = function() {
-    if(this.mailAdress) {
-      $scope.contacts.push($scope.mailAdress);
-      $scope.mailAdress = "";
-    }
-  };
-}
 
 
-	
 });
 
 particlesJS("particles-js", {"particles":{"number":{"value":70,"density":{"enable":true,"value_area":481.0236182596568}},
