@@ -493,8 +493,13 @@ margin-bottom: 1%;
 }
 #aboutme{
     margin-left:10%; margin-right: 10% ; padding:2%;
-
 }
+.fab{
+  margin:4px;
+}
+.links{
+    font-family: "Open Sans", sans-serif;
+    }
 
 /* ---- reset ---- */ body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } 
 canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ 
