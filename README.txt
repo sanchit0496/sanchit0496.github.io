@@ -1,2 +1,2 @@
 Personal portfolio of https://github.com/sanchit0496.
-Page published at sanchit0496.github.io.
+Page published at https://sanchit0496.github.io.
