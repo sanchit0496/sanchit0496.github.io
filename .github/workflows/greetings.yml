@@ -11,3 +11,7 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: 'Message that will be displayed on users'' first issue'
         pr-message: 'Message that will be displayed on users'' first pr'
+
+- name: LambdaTest Tunnel Action
+  uses: LambdaTest/LambdaTest-tunnel-action@v1
+
